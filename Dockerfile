@@ -11,6 +11,7 @@ RUN apt-get update \
         git \
         wget \
         #for bluez
-        bluez bluez-tools python-dev python-pip libglib2.0-dev libboost-python-dev libboost-thread-dev libbluetooth-dev \
+        bluez bluez-tools python-dev python-pip libglib2.0-dev libboost-python-dev \ 
+        libboost-thread-dev libbluetooth-dev \
         #wiringpi
         wiringpi
