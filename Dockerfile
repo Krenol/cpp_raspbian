@@ -13,5 +13,9 @@ RUN apt-get update \
         #for bluez
         bluez bluez-tools python-dev python-pip libglib2.0-dev libboost-python-dev \ 
         libboost-thread-dev libbluetooth-dev \
-        #wiringpi
-        wiringpi
+        # pigpio for pin control
+        pigpio \       
+        # eigen for matrix cpp support
+        libboost-all-dev libeigen3-dev \
+        # nlohman for json cpp support
+        nlohmann-json-dev
