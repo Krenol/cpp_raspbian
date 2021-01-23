@@ -2,6 +2,8 @@ ARG STRETCH_VERSION=041518
 
 FROM raspbian/stretch:${STRETCH_VERSION}
 
+RUN apt-get dist-upgrade -y
+
 # Update image and get cmake
 RUN apt-get update \
     && apt-get upgrade -y \
@@ -16,6 +18,4 @@ RUN apt-get update \
         # pigpio for pin control
         pigpio \       
         # eigen for matrix cpp support
-        libboost-all-dev libeigen3-dev \
-        # nlohman for json cpp support
-        nlohmann-json-dev
+        libboost-all-dev libeigen3-dev 
